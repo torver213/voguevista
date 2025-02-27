@@ -234,7 +234,7 @@ const TeamSection = () => {
         <Grid2 container spacing={2}>
           {team.map((item) => (
             <Grid2 key={item.role} size={{ lg: 3, md: 3, sm: 12, xs: 12 }}>
-              <Slide cascade duration={600}>
+              <Slide cascade duration={1200}>
               <TeamCard item={item} />
               </Slide>
             </Grid2>

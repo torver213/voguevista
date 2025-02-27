@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // image preview
 import 'react-photo-view/dist/react-photo-view.css';
+import "intersection-observer";
 
 
 export const metadata: Metadata = {

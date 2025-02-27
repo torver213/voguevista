@@ -2,7 +2,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import FlippingButton from "./FlippingButton";
-import { Fade, Slide } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Rotate, Slide } from "react-awesome-reveal";
 import Slider from "react-slick";
 
 const SliderItem = ({ item }: { item: { url: string } }) => {
@@ -60,7 +60,8 @@ const SliderItem = ({ item }: { item: { url: string } }) => {
             }
           })]}
         >
-          <Fade direction="top-left">
+          
+          <Rotate direction="top-left" duration={1200} >
             <Typography
               sx={[(theme) => ({
                 display: "block",
@@ -81,8 +82,9 @@ const SliderItem = ({ item }: { item: { url: string } }) => {
             >
               Creative Model Agency
             </Typography>
-          </Fade>
-          <Fade direction="top-left" delay={100}>
+          </Rotate>
+          <AttentionSeeker effect="rubberBand">
+          {/* <Fade direction="top-left" delay={100}> */}
             <Typography
               sx={[
                 (theme) => ({
@@ -127,7 +129,8 @@ const SliderItem = ({ item }: { item: { url: string } }) => {
                 Frames
               </Typography>
             </Typography>
-          </Fade>
+          {/* </Fade> */}
+          </AttentionSeeker>
           <Slide delay={150} duration={3000}>
             <Typography
               sx={[(theme) => ({

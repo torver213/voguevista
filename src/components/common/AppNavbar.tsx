@@ -143,7 +143,8 @@ export default function DrawerAppBar(props: Props) {
               LinkComponent={Link}
               href={item.url} 
               sx={[(theme) => ({ 
-                ...((item.url === activeSection) ? { color: theme.vars.palette.warning.light, borderBottom: `2px solid ${theme.vars.palette.warning.light}` } : {}) 
+                ...((item.url === activeSection) ? { 
+                  borderBottom: `2px solid ${theme.vars.palette.common.white}` } : {}) 
               })]}>
               <ListItemText primary={<Typography sx={{fontFamily: "cursive"}}>{item.title}</Typography>} />
             </ListItemButton>
@@ -215,7 +216,9 @@ export default function DrawerAppBar(props: Props) {
                     fontWeight: 800, 
                     fontSize: "1.2rem",
                     borderRadius: 0,
-                    ...((item.url === activeSection) ? { color: theme.vars.palette.warning.light, borderBottom: `2px solid ${theme.vars.palette.warning.light}` } : {}) 
+                    ...((item.url === activeSection) ? { 
+                      // color: theme.vars.palette.warning.light, 
+                      borderBottom: `2px solid ${theme.vars.palette.common.white}` } : {}) 
                   })]}
                   LinkComponent={Link}
                   href={item.url}
